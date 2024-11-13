@@ -1,0 +1,214 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+.flex-fill {
+  flex: 1; /* This will take the remaining space */
+}
+
+.nav-logo {
+  height: 50px;
+  width: 50px;
+  border-radius: 8px;
+  margin-right: 10px;
+}
+
+.navbar {
+  background-color: #ffffff;
+  padding: 0;
+  position: sticky;
+  top: 0;
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
+  z-index: 2;
+}
+
+.brand-name {
+  color: #fe5200;
+  font-weight: 700;
+}
+
+.nav-link {
+  font-weight: 600 !important;
+  margin-left: 10px;
+}
+
+.nav-link:hover {
+  color: #ff5200 !important;
+  transition: background-color 0.3s;
+  transform: scale(1.1);
+}
+
+.navbar-brand:hover {
+  color: #ff5200 !important;
+  transition: background-color 0.3s;
+  transform: scale(1.1);
+}
+.offcanvas {
+  border-radius: 25px; /* Adjust the value as needed */
+}
+.banner-container {
+  position: relative;
+  text-align: center;
+  color: white; /* Change text color as needed */
+  overflow: hidden;
+}
+
+.banner-container img {
+  width: 100%; /* Make image responsive */
+  height: auto;
+}
+
+.banner-container h1 {
+  position: absolute;
+  top: 20%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Adjust for text size */
+  z-index: 1; /* Ensure text is above the image */
+  font-weight: 700;
+  font-size: 3rem; /* Adjust font size for visibility */
+}
+
+.cat-container {
+  background-color: rgb(19, 90, 153);
+}
+
+.footer-container {
+  background-color: #f8f8f8; /* Light background for footer */
+  padding: 20px 0; /* Add some padding */
+  text-align: center; /* Center text */
+  box-shadow: 0 -5px 5px -5px rgba(0, 0, 0, 0.5);
+  z-index: 3;
+}
+
+.footer-row {
+  margin: 0 auto; /* Center the footer blocks */
+}
+.more {
+  padding-bottom: 30px;
+}
+.links {
+  padding: 30px;
+}
+
+/* From Uiverse.io by javierBarroso */
+.parent {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.child {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform-style: preserve-3d;
+  transition: all 0.3s cubic-bezier(0.68, 0.85, 0.265, 1.85);
+  border-radius: 5px;
+  margin: 0 5px;
+  box-shadow: inset 1px 1px 2px #fff, 0 0 5px #4442;
+}
+
+.child:hover {
+  background-color: white;
+  background-position: -100px 100px, -100px 100px;
+  /*transform: rotate3d(0.5, 1, 0, 30deg);*/
+  transform: perspective(180px) rotateX(60deg) translateY(2px);
+}
+
+.child-1:hover {
+  box-shadow: 0px 10px 10px #1e90ff;
+}
+.child-2:hover {
+  box-shadow: 0px 10px 10px #ff00ff;
+}
+.child-3:hover {
+  box-shadow: 0px 10px 10px #000;
+}
+.child-4:hover {
+  box-shadow: 0px 10px 10px #4267b2;
+}
+
+.button {
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  border: none;
+  background-color: transparent;
+  font-size: 20px;
+  transition-duration: 0.5s;
+  transition-timing-function: cubic-bezier(0.68, -0.85, 0.265, 1.55);
+}
+
+.child:hover > .button {
+  transform: translate3d(0px, 20px, 30px) perspective(80px) rotateX(-60deg)
+    translateY(2px) translateZ(10px);
+}
+.download:hover {
+  transition: background-color 0.3s;
+  transform: scale(1.1);
+}
+
+.copyright {
+  text-align: center;
+}
+.more-list {
+  align-items: start;
+  text-align: center;
+}
+.address:hover {
+  color: #ff5200 !important;
+  transition: background-color 0.3s;
+  transform: scale(1.1);
+}
+
+/* cards */
+.res {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: fit-content;
+  gap: 10px;
+  margin-top: 10px;
+}
+.info-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Space them out */
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+}
+
+.rating-star {
+  color: #ffd700; /* Gold color for star */
+  margin-right: 5px; /* Space between star and review count */
+}
+
+.review-count {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.delivery-info {
+  font-size: 14px;
+  color: #666; /* Optional: Adjust the color */
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+
+.delivery-info i {
+  margin-right: 5px; /* Space between dot icon and text */
+}
