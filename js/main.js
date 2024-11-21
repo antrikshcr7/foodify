@@ -55,3 +55,5 @@ document.addEventListener("DOMContentLoaded", function () {
   restaurantContainer.addEventListener("scroll", updateButtonState);
   updateButtonState();
 });
+
+// ads slider
